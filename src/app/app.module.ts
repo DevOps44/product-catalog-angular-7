@@ -11,7 +11,7 @@ import { StarComponent } from './shared/star.component';
 import { ProductService } from './products/product.service';
 import { WelcomeComponent } from './home/welcome.component';
 import { ProductDetailComponent } from './products/product-detail.component';
-import { PageNotFoundComponent } from './error/page-not-found.component';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { ProductDetailGuard } from './products/product-detail.guard';
 
@@ -25,7 +25,7 @@ import { ProductDetailGuard } from './products/product-detail.guard';
     StarComponent,
     WelcomeComponent,
     ProductDetailComponent,
-    PageNotFoundComponent
+
   ],
   imports: [
     BrowserModule,
@@ -39,7 +39,7 @@ import { ProductDetailGuard } from './products/product-detail.guard';
         component: ProductDetailComponent},
       {path: 'welcome', component: WelcomeComponent},
       {path: '', redirectTo: 'welcome',pathMatch: 'full'},
-      {path: '**', component: PageNotFoundComponent}
+
     ])
   ],
   bootstrap: [
